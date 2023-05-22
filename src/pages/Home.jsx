@@ -1,5 +1,11 @@
+import { useEffect, useState } from "react"
+
 function  Home() {
-    return <h1>Hello, from Home page</h1>
+    const [catalog, setCatalog] = useState([]);
+
+    useEffect(() => {
+
+    }, [])
     
 }
 
