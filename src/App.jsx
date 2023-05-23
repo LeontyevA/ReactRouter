@@ -8,7 +8,9 @@ import { Home } from './pages/Home';
 import { Contacts } from './pages/Contacts';
 import { About } from './pages/About';
 import { NotFound } from './pages/NotFound';
-import { Movie } from './pages/Movie';
+import { Category } from './components/Category';
+import { MealItem } from './components/MealItem';
+import { Recipe } from './components/Recipe';
 
 const App = () => {
 	return (
@@ -19,7 +21,8 @@ const App = () => {
 					<Route path='/' element={<Home />} />
 					<Route path='/contacts' element={<Contacts />} />
 					<Route path='/about' element={<About />} />
-					<Route path='/movies/:id' element={<Movie />} />
+					<Route path='/category/:name' element={<Category />} />
+					<Route path='/recipe/:idMeal' elsement={<Recipe />}
 					<Route path='*' element={<NotFound />} />
 				</Routes>
 			</main>
