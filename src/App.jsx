@@ -8,9 +8,8 @@ import { Home } from './pages/Home';
 import { Contacts } from './pages/Contacts';
 import { About } from './pages/About';
 import { NotFound } from './pages/NotFound';
-import { Category } from './components/Category';
-import { MealItem } from './components/MealItem';
-import { Recipe } from './components/Recipe';
+import { Category } from './pages/Category';
+import { Recipe } from './pages/Recipe';
 
 const App = () => {
 	return (
@@ -22,7 +21,7 @@ const App = () => {
 					<Route path='/contacts' element={<Contacts />} />
 					<Route path='/about' element={<About />} />
 					<Route path='/category/:name' element={<Category />} />
-					<Route path='/recipe/:idMeal' elsement={<Recipe />}
+					<Route path='/meal/:idMeal' element={<Recipe />} />
 					<Route path='*' element={<NotFound />} />
 				</Routes>
 			</main>

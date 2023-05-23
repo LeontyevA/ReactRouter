@@ -6,7 +6,7 @@ function MealItem(props) {
 		strMeal = '',
 		strMealThumb = '',
 	} = props;
-	// return ( <div className="card">{idCategory}</div> );
+
 	return (
 		<div className='card'>
 			<div className='card-image'>
